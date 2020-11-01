@@ -16,7 +16,12 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          This project on <a href="https://nextjs.org">Github!</a>
+          This project on{" "}
+          <h1 className={styles.title}>
+            <a href="https://github.com/MiguelMachado-dev/imagecomponent">
+              Github!
+            </a>
+          </h1>
         </p>
 
         <div className={styles.grid}>
@@ -47,15 +52,19 @@ export default function Home() {
             </a>
           </Link>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <Link href="/low-quality">
+            <a className={styles.card}>
+              <h3>Low quality &rarr;</h3>
+              <p>Low quality image, full optimization.</p>
+            </a>
+          </Link>
+
+          <Link href="/external">
+            <a className={styles.card}>
+              <h3>External &rarr;</h3>
+              <p>Loading and optimizing external images.</p>
+            </a>
+          </Link>
         </div>
       </main>
 
