@@ -1,15 +1,13 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Unsized() {
+import Meta from "../components/Meta";
+
+export default function LowQuality() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Low Quality</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta title="Low Quality" />
 
       <main className={styles.main}>
         <Link href="/">

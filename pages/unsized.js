@@ -1,15 +1,13 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+import Meta from "../components/Meta";
+
 export default function Unsized() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Não utilizando Image Component</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta title="Unsized prop" />
 
       <main className={styles.main}>
         <Link href="/">

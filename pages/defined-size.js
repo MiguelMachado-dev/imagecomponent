@@ -1,15 +1,13 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+import Meta from "../components/Meta";
+
 export default function DefinedSize() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Defined Size</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta title="Defined size" />
 
       <main className={styles.main}>
         <Link href="/">

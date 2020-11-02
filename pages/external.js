@@ -1,15 +1,13 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+import Meta from "../components/Meta";
+
 export default function External() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>External</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta title="External" />
 
       <main className={styles.main}>
         <Link href="/">

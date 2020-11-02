@@ -1,14 +1,12 @@
-import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+
+import Meta from "../components/Meta";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta title="Using Image Component" />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -76,6 +74,15 @@ export default function Home() {
         >
           Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+        </a>
+
+        <a
+          href="https://miguelmachado.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.blog}
+        >
+          Visit my blog
         </a>
       </footer>
     </div>

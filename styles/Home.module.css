@@ -31,8 +31,14 @@
   height: 100px;
   border-top: 1px solid #eaeaea;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.footer .blog {
+  color: #0071f3e3;
+  text-decoration: underline;
 }
 
 .footer img {
