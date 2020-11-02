@@ -77,7 +77,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://miguelmachado.dev"
+          href="https://miguelmachado.dev?utm_source=image-component"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.blog}
